@@ -1,0 +1,62 @@
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menu = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".main-nav");
+  const searchToggle = document.querySelector(".search-toggle");
+  const searchPanel = document.querySelector(".search-panel");
+  const themeToggle = document.querySelector(".theme-toggle");
+  const backToTop = document.querySelector(".back-to-top");
+  const year = document.querySelector("#year");
+  const time = document.querySelector("#live-time");
+
+  if (year) year.textContent = new Date().getFullYear();
+
+  function updateTime(){
+    if(time) time.textContent = new Date().toLocaleTimeString([], {hour:"numeric", minute:"2-digit"});
+  }
+  updateTime();
+  setInterval(updateTime, 60000);
+
+  menu?.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    menu.setAttribute("aria-expanded", String(open));
+  });
+
+  searchToggle?.addEventListener("click", () => {
+    searchPanel.hidden = !searchPanel.hidden;
+    if(!searchPanel.hidden) document.querySelector("#search-input")?.focus();
+  });
+
+  themeToggle?.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    localStorage.setItem("804-theme", document.body.classList.contains("dark") ? "dark" : "light");
+  });
+
+  if(localStorage.getItem("804-theme") === "dark") document.body.classList.add("dark");
+
+  const searchable = [
+    {title:"Breaking News", url:"breaking-news.html"},
+    {title:"Crime", url:"crime.html"},
+    {title:"Traffic", url:"traffic.html"},
+    {title:"Community", url:"community.html"},
+    {title:"Sports", url:"sports.html"},
+    {title:"Weather", url:"weather.html"},
+    {title:"Business", url:"business.html"},
+    {title:"Events", url:"events.html"},
+    {title:"Sample Richmond News Article", url:"articles/sample-article.html"}
+  ];
+
+  document.querySelector("#site-search")?.addEventListener("submit", e => {
+    e.preventDefault();
+    const q = document.querySelector("#search-input").value.trim().toLowerCase();
+    const results = searchable.filter(x => x.title.toLowerCase().includes(q));
+    const box = document.querySelector("#search-results");
+    if(!q){ box.innerHTML = ""; return; }
+    box.innerHTML = results.length ? results.map(x => `<a href="${x.url}">${x.title}</a>`).join(" · ") : "No matching page found.";
+  });
+
+  window.addEventListener("scroll", () => backToTop?.classList.toggle("show", window.scrollY > 500));
+  backToTop?.addEventListener("click", () => window.scrollTo({top:0, behavior:"smooth"}));
+
+  document.querySelectorAll('a[href="#"]').forEach(a => a.addEventListener("click", e => e.preventDefault()));
+});

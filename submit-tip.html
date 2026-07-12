@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="804 Hood News covers breaking news, crime, traffic, community, sports, business and events in Richmond, Virginia.">
+<meta name="theme-color" content="#d40000">
+<title>Home | 804 Hood News</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script defer src="js/script.js"></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="breaking-strip">
+  <div class="container breaking-strip-inner">
+    <span class="breaking-label">LIVE</span>
+    <div class="ticker-wrap">
+      <div class="ticker-track">
+        <span>Breaking news updates from Richmond and Central Virginia</span>
+        <span>Traffic alerts, community stories and public safety coverage</span>
+        <span>Submit tips, photos and videos directly to 804 Hood News</span>
+      </div>
+    </div>
+    <span class="live-time" id="live-time"></span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container masthead">
+    <a class="brand-logo" href="index.html" aria-label="804 Hood News home">
+      <img src="assets/804-hood-news-logo.jpg" alt="804 Hood News Richmond Virginia">
+    </a>
+
+    <div class="masthead-copy">
+      <span class="masthead-kicker">Richmond’s Independent Local News Source</span>
+      <strong>News • Culture • Community</strong>
+    </div>
+
+    <div class="header-tools">
+      <button class="icon-button search-toggle" aria-label="Open search">⌕</button>
+      <button class="icon-button theme-toggle" aria-label="Toggle dark mode">◐</button>
+      <a class="tip-button" href="submit-tip.html">Submit a Tip</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-panel" hidden>
+    <div class="container">
+      <form class="site-search" id="site-search">
+        <input id="search-input" type="search" placeholder="Search 804 Hood News">
+        <button type="submit">Search</button>
+      </form>
+      <div id="search-results" class="search-results"></div>
+    </div>
+  </div>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="container nav-inner"><a href="index.html" class="active">Home</a><a href="breaking-news.html" class="">Breaking News</a><a href="crime.html" class="">Crime</a><a href="traffic.html" class="">Traffic</a><a href="community.html" class="">Community</a><a href="sports.html" class="">Sports</a><a href="weather.html" class="">Weather</a><a href="business.html" class="">Business</a><a href="events.html" class="">Events</a><a href="advertise.html" class="">Advertise</a><a href="submit-tip.html" class="">Submit a Tip</a><a href="contact.html" class="">Contact</a></div>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="home-hero">
+  <div class="container hero-layout">
+    <article class="lead-story">
+      <a href="articles/sample-article.html" class="lead-image image-placeholder"><span>Featured Richmond Story Image</span></a>
+      <div class="lead-overlay">
+        <span class="story-tag">Breaking News</span>
+        <h1><a href="articles/sample-article.html">Major Richmond headline goes here with a strong local focus</a></h1>
+        <p>Use this space for the most important developing story affecting Richmond residents.</p>
+        <div class="story-meta">804 Hood News Staff · Updated 12 minutes ago</div>
+      </div>
+    </article>
+
+    <aside class="hero-rail">
+      <div class="rail-heading"><span>Top Stories</span><span class="pulse-dot"></span></div>
+      <article class="rail-story">
+        <div class="rail-number">01</div><div><span class="story-tag">Crime</span><h2><a href="articles/sample-article.html">Police release update in ongoing Richmond investigation</a></h2><div class="story-meta">28 min ago</div></div>
+      </article>
+      <article class="rail-story">
+        <div class="rail-number">02</div><div><span class="story-tag">Traffic</span><h2><a href="articles/sample-article.html">Major road closure expected to affect evening commute</a></h2><div class="story-meta">44 min ago</div></div>
+      </article>
+      <article class="rail-story">
+        <div class="rail-number">03</div><div><span class="story-tag">Community</span><h2><a href="articles/sample-article.html">Local organization announces new neighborhood program</a></h2><div class="story-meta">1 hr ago</div></div>
+      </article>
+      <a href="breaking-news.html" class="rail-link">View all top stories →</a>
+    </aside>
+  </div>
+</section>
+
+<div class="container ad-banner">ADVERTISEMENT · 970 × 90</div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title-row">
+      <div><span class="section-kicker">Fresh From The 804</span><h2>Latest News</h2></div>
+      <a href="breaking-news.html">See all news →</a>
+    </div>
+    <div class="news-grid">
+      <article class="news-card featured-card">
+        <a class="card-image image-placeholder" href="articles/sample-article.html"><span>Latest News Image</span></a>
+        <div class="card-copy"><span class="story-tag">Community</span><h3><a href="articles/sample-article.html">Richmond community members come together for major neighborhood event</a></h3><p>Replace this summary with verified reporting and local context.</p><div class="story-meta">2 hours ago</div></div>
+      </article>
+      <article class="news-card"><a class="card-image image-placeholder" href="articles/sample-article.html"><span>Crime Image</span></a><div class="card-copy"><span class="story-tag">Crime</span><h3><a href="articles/sample-article.html">Authorities ask the public for information after reported incident</a></h3><div class="story-meta">3 hours ago</div></div></article>
+      <article class="news-card"><a class="card-image image-placeholder" href="articles/sample-article.html"><span>Business Image</span></a><div class="card-copy"><span class="story-tag">Business</span><h3><a href="articles/sample-article.html">New locally owned business prepares to open in Richmond</a></h3><div class="story-meta">4 hours ago</div></div></article>
+      <article class="news-card"><a class="card-image image-placeholder" href="articles/sample-article.html"><span>Traffic Image</span></a><div class="card-copy"><span class="story-tag">Traffic</span><h3><a href="articles/sample-article.html">Construction project creates temporary lane closures</a></h3><div class="story-meta">5 hours ago</div></div></article>
+      <article class="news-card"><a class="card-image image-placeholder" href="articles/sample-article.html"><span>Sports Image</span></a><div class="card-copy"><span class="story-tag">Sports</span><h3><a href="articles/sample-article.html">Local athletes prepare for a major weekend matchup</a></h3><div class="story-meta">6 hours ago</div></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="black-section">
+  <div class="container split-section">
+    <div>
+      <div class="section-title-row light"><div><span class="section-kicker">Most Read</span><h2>Trending in Richmond</h2></div></div>
+      <ol class="trending-list">
+        <li><a href="articles/sample-article.html">The Richmond story everyone is talking about today</a></li>
+        <li><a href="articles/sample-article.html">Major traffic update draws attention across the region</a></li>
+        <li><a href="articles/sample-article.html">Local business announcement receives strong community response</a></li>
+        <li><a href="articles/sample-article.html">Weekend events families should know about</a></li>
+        <li><a href="articles/sample-article.html">Public safety update from local officials</a></li>
+      </ol>
+    </div>
+
+    <div class="weather-panel">
+      <div class="weather-top"><div><span class="section-kicker">Richmond Weather</span><h2>Weather at a glance</h2></div><span class="weather-symbol">☀</span></div>
+      <div class="weather-current"><strong>82°</strong><span>Partly cloudy<br>Feels like 84°</span></div>
+      <div class="weather-days"><span>Tonight <b>68°</b></span><span>Tomorrow <b>86°</b></span><span>Monday <b>84°</b></span></div>
+      <p class="weather-note">Connect a weather service later for automatic live conditions.</p>
+      <a href="weather.html">Full weather page →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title-row"><div><span class="section-kicker">Watch</span><h2>804 Hood News Video</h2></div></div>
+    <div class="video-feature">
+      <div class="video-placeholder"><button aria-label="Play video">▶</button><span>Featured Video Placeholder</span></div>
+      <div class="video-copy"><span class="story-tag">Featured Video</span><h2>Put your latest interview, live report or community video here</h2><p>This section is ready for a YouTube, Facebook or Instagram video embed.</p><a class="red-link" href="#">Watch more videos →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="category-band">
+  <div class="container">
+    <div class="section-title-row light"><div><span class="section-kicker">Explore</span><h2>Across The 804</h2></div></div>
+    <div class="category-tiles">
+      <a href="crime.html"><span>Crime</span><small>Public safety and investigations</small></a>
+      <a href="traffic.html"><span>Traffic</span><small>Roads, crashes and transit</small></a>
+      <a href="community.html"><span>Community</span><small>Neighborhood voices</small></a>
+      <a href="sports.html"><span>Sports</span><small>Local teams and athletes</small></a>
+      <a href="business.html"><span>Business</span><small>Openings, jobs and growth</small></a>
+      <a href="events.html"><span>Events</span><small>What is happening nearby</small></a>
+    </div>
+  </div>
+</section>
+
+<section class="submit-cta">
+  <div class="container submit-cta-inner">
+    <div><span class="section-kicker">You See It. We Report It.</span><h2>Send us the story happening in your neighborhood.</h2></div>
+    <div><a class="white-button" href="submit-tip.html">Submit News Tip</a><a class="outline-button" href="advertise.html">Advertise With Us</a></div>
+  </div>
+</section>
+</main>
+
+<section class="newsletter">
+  <div class="container newsletter-inner">
+    <div>
+      <span class="section-kicker">The 804 Brief</span>
+      <h2>Richmond news delivered directly to you.</h2>
+      <p>Breaking stories, traffic alerts, events and community updates.</p>
+    </div>
+    <form name="newsletter" method="POST" data-netlify="true" class="newsletter-form">
+      <input type="hidden" name="form-name" value="newsletter">
+      <input type="email" name="email" placeholder="Enter your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <img src="assets/804-hood-news-logo.jpg" alt="804 Hood News">
+      <p>Independent local reporting focused on Richmond, Virginia and the surrounding 804 region.</p>
+    </div>
+    <div><h3>Coverage</h3><a href="breaking-news.html">Breaking News</a><a href="crime.html">Crime</a><a href="traffic.html">Traffic</a><a href="community.html">Community</a></div>
+    <div><h3>More</h3><a href="sports.html">Sports</a><a href="weather.html">Weather</a><a href="business.html">Business</a><a href="events.html">Events</a></div>
+    <div><h3>Connect</h3><a href="advertise.html">Advertise</a><a href="submit-tip.html">Submit a Tip</a><a href="contact.html">Contact</a><div class="social-row"><a href="#">FB</a><a href="#">IG</a><a href="#">YT</a><a href="#">TT</a></div></div>
+  </div>
+  <div class="container footer-bottom"><span>© <span id="year"></span> 804 Hood News</span><span>Richmond, Virginia</span></div>
+</footer>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+</body>
+</html>
